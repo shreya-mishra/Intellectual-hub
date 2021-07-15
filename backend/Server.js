@@ -12,14 +12,11 @@ const app = express();
 // GET Request to "/" route
 app.use(express.json());
 
-app.get("/api", (req, res) => {
-  res.json("API is running..");
-});
 app.use("/api/user", userRoutes);
 // -----------------------DEPLOYMENT----------------------------
 const __dirname = path.resolve();
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "intellectual-hub/build")));
+  app.use(express.static(path.join(__dirname, "/intellectual-hub/build")));
   app.get("*", (req, res) => {
     res.sendFile(
       path.resolve(__dirname, "intellectual-hub", "build", "index.html")
