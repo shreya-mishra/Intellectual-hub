@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend",
+    "client": "npm start --prefix intellectual-hub",
     "dev": "concurrently \"npm start\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix intellectual-hub && npm run build --prefix intellectual-hub"
   },
   "author": "Shreya Mishra",
   "license": "ISC",
