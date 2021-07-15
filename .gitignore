@@ -1,8 +1,8 @@
 #production
 /build
-/frontend/build
+/intellectual-hub/build
 
 /node_modules
 node_modules/
-/frontend/node_modules/
+/intellectual-hub/node_modules/
 .env
