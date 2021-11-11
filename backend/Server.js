@@ -11,9 +11,6 @@ const app = express();
 
 // GET Request to "/" route
 app.use(express.json());
-
-app.use("/", console.log("server started"));
-app.use("/api", console.log("/api is there"));
 app.use("/api/user", userRoutes);
 // -----------------------DEPLOYMENT----------------------------
 const __dirname = path.resolve();
