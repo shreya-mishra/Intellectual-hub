@@ -91,17 +91,18 @@ const Home = ({
             <h2 className='category__name'>Book</h2>
           </div>
         </div>
-        {/* {arr ?
-
-
-                    <button className="submit__button" onClick={startQuiz}>
-                        Start Quiz
-            </button> : <button className="submit__button" onClick={handleOpen}>
-                        Register
-            </button>} */}
-        <button className='submit__button' onClick={startQuiz}>
+        {arr ? (
+          <button className='submit__button' onClick={startQuiz}>
+            Start Quiz
+          </button>
+        ) : (
+          <button className='submit__button' onClick={handleOpen}>
+            Register
+          </button>
+        )}
+        {/* <button className='submit__button' onClick={startQuiz}>
           Start Quiz
-        </button>
+        </button> */}
 
         <ComponentModal open={open} setOpen={setOpen} />
       </div>
